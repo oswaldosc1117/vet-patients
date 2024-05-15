@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Control para Pacientes Veterinarios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyecto consiste en una página para llevar el control y evolución de pacientes veterinarios, elaborado con React, TypeScript, Zustand, React Hook Form, Tailwind y Vite.
 
-Currently, two official plugins are available:
+Adicionalmente, emplea dependencias como:
+  - "react-toastify": "^10.0.5" - Para generar avisos de determinadas acciones mediante ventanas modales.
+  - "uuid": "^9.0.1" - Para generar IDs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Del lado izquierdo, se encuentra el formulario donde se ingresan los datos de los pacientes (este cuenta con validación en cada input).
+Del lado derecho, se mostrarán los pacientes que hayan sido registrados.
 
-## Expanding the ESLint configuration
+Cada paciente generado puede editarse (en caso de que se desee modificar algun dato ingresado previamente) o eliminarse. En el caso de la edición, se recuperarán los datos ingresados al momento de su creación mediante React Hook Form.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Con cada acción (bien sea agregar un paciente, actualizarlo o eliminarlo) se generará una ventana modal con la acción realizada para darle una mayor retroalimentación al usuario realizadas por medio de react-toastify.
 
-- Configure the top-level `parserOptions` property like this:
+Finalmente, apoyandonos de las cualidades de Zustand, se implementa la funcion "persist" para implementar LocalStorage, por lo que la información ingresada previamente no se perderá al actualizar la págin
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+El proyecto se encuentra alojado en Netlify.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Enlace: https://66443b294aa9564ba2ceaf8c--statuesque-pie-78d0ff.netlify.app/
