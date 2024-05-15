@@ -17,4 +17,4 @@ Finalmente, apoyandonos de las cualidades de Zustand, se implementa la funcion "
 
 El proyecto se encuentra alojado en Netlify.
 
-Enlace: https://66443b294aa9564ba2ceaf8c--statuesque-pie-78d0ff.netlify.app/
+Enlace: https://statuesque-pie-78d0ff.netlify.app/
