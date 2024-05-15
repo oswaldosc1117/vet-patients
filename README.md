@@ -11,9 +11,9 @@ Del lado derecho, se mostrarán los pacientes que hayan sido registrados.
 
 Cada paciente generado puede editarse (en caso de que se desee modificar algun dato ingresado previamente) o eliminarse. En el caso de la edición, se recuperarán los datos ingresados al momento de su creación mediante React Hook Form.
 
-Con cada acción (bien sea agregar un paciente, actualizarlo o eliminarlo) se generará una ventana modal con la acción realizada para darle una mayor retroalimentación al usuario realizadas por medio de react-toastify.
+Con cada acción (bien sea agregar un paciente, actualizarlo o eliminarlo) se generará una ventana modal con la acción realizada para darle una mayor retroalimentación al usuario por medio de react-toastify.
 
-Finalmente, apoyandonos de las cualidades de Zustand, se implementa la funcion "persist" para implementar LocalStorage, por lo que la información ingresada previamente no se perderá al actualizar la págin
+Finalmente, apoyandonos de las cualidades de Zustand, se implementa la funcion "persist" para implementar LocalStorage, por lo que la información ingresada previamente no se perderá al actualizar la página.
 
 El proyecto se encuentra alojado en Netlify.
 
